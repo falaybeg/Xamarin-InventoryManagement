@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockApp.Views.RegisterPage"
+             xmlns:viewModels="clr-namespace:StockApp.ViewModels">
+
+        <ContentPage.BindingContext>
+            <viewModels:RegisterViewModel/>
+        </ContentPage.BindingContext>
+
+
+
+        <StackLayout Orientation="Vertical">
+            <Entry Text="{Binding FirstName}" Placeholder="First Name"/>
+            <Entry Text="{Binding LastName}" Placeholder="Last Name"/>
+            <Entry Text="{Binding PhoneNumber}" Placeholder="Phone Number"/>
+            <Entry Text="{Binding CardNumber}" Placeholder="Card Number"/>
+            <Entry Text="{Binding Email}" Placeholder="Email"/>
+            <Entry Text="{Binding Password}" Placeholder="Password" IsPassword="True"/>
+            <Entry Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" IsPassword="True"/>
+
+            <Button Command="{Binding RegisterCommand}" Text="Register"/>
+        </StackLayout>
+
+</ContentPage>

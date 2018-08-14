@@ -1,0 +1,1 @@
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.UWP\StockApp.UWP.csproj;x86

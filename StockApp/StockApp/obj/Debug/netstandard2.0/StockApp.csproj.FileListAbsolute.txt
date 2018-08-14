@@ -1,0 +1,13 @@
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\bin\Debug\netstandard2.0\StockApp.deps.json
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\bin\Debug\netstandard2.0\StockApp.dll
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\bin\Debug\netstandard2.0\StockApp.pdb
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\StockApp.csproj.CoreCompileInputs.cache
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\StockApp.AssemblyInfoInputs.cache
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\StockApp.AssemblyInfo.cs
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\XamlC.stamp
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\StockApp.dll
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\StockApp.pdb
+c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp\obj\Debug\netstandard2.0\StockApp.csprojAssemblyReference.cache
