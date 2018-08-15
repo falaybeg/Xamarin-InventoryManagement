@@ -10,16 +10,32 @@
 
 
 
-        <StackLayout Orientation="Vertical">
-            <Entry Text="{Binding FirstName}" Placeholder="First Name"/>
-            <Entry Text="{Binding LastName}" Placeholder="Last Name"/>
-            <Entry Text="{Binding PhoneNumber}" Placeholder="Phone Number"/>
-            <Entry Text="{Binding CardNumber}" Placeholder="Card Number"/>
-            <Entry Text="{Binding Email}" Placeholder="Email"/>
-            <Entry Text="{Binding Password}" Placeholder="Password" IsPassword="True"/>
-            <Entry Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" IsPassword="True"/>
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="Center"
+                     Spacing="20"
+                     Padding="20">
+            
+            <Entry Text="{Binding FirstName}" 
+                   Placeholder="First Name"/>
+            <Entry Text="{Binding LastName}" 
+                   Placeholder="Last Name"/>
+            <Entry Text="{Binding PhoneNumber}" 
+                   Placeholder="Phone Number"/>
+            <Entry Text="{Binding CardNumber}" 
+                   Placeholder="Card Number"/>
+            <Entry Text="{Binding Email}" 
+                   Placeholder="Email"/>
+            <Entry Text="{Binding Password}" 
+                   Placeholder="Password"
+                   IsPassword="True"/>
+            <Entry Text="{Binding ConfirmPassword}" 
+                   Placeholder="Confirm Password"
+                   IsPassword="True"/>
 
-            <Button Command="{Binding RegisterCommand}" Text="Register"/>
-        </StackLayout>
+            <Button Command="{Binding RegisterCommand}" Text="Register" BackgroundColor="SeaGreen"/>
+            
+        <Button Text="Go to Login Page" Clicked="Button_Clicked"/>
+
+    </StackLayout>
 
 </ContentPage>

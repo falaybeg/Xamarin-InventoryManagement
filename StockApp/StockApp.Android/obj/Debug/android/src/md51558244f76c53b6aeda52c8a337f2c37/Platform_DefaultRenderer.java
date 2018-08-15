@@ -25,19 +25,19 @@ public class Platform_DefaultRenderer
 	}
 
 
-	public Platform_DefaultRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
-	{
-		super (p0, p1, p2);
-		if (getClass () == Platform_DefaultRenderer.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.Platform+DefaultRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
-	}
-
-
 	public Platform_DefaultRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == Platform_DefaultRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.Platform+DefaultRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+	}
+
+
+	public Platform_DefaultRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
+	{
+		super (p0, p1, p2);
+		if (getClass () == Platform_DefaultRenderer.class)
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.Platform+DefaultRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
 
 

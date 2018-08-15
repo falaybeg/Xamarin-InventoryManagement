@@ -1,8 +1,8 @@
 FormsViewGroup
 Newtonsoft.Json
+Plugin.Settings.Abstractions
+Plugin.Settings
 StockApp
-System.Net.Http.Extensions
-System.Net.Http.Primitives
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common

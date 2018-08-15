@@ -1,3 +1,4 @@
+using StockApp.Helpers;
 using StockApp.Views;
 using System;
 using Xamarin.Forms;
@@ -11,8 +12,9 @@ namespace StockApp
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new RegisterPage();
+      
+            SetMainPage();
+			//MainPage = new NavigationPage(new RegisterPage());
 		}
 
 		protected override void OnStart ()
@@ -29,5 +31,21 @@ namespace StockApp
 		{
 			// Handle when your app resumes
 		}
+
+        private void SetMainPage()
+        {
+            if(!string.IsNullOrEmpty(Settings.AccessToken))
+            {
+                MainPage = new NavigationPage(new ProductPage());
+            }
+            else if(!string.IsNullOrEmpty(Settings.Username) && !string.IsNullOrEmpty(Settings.Password))
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new RegisterPage());
+            }
+        }
 	}
 }

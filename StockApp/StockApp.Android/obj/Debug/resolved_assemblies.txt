@@ -1,70 +1,70 @@
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\StockApp.Android.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\FormsViewGroup.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Java.Interop.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Mono.Android.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\mscorlib.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\StockApp.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Core.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Net.Http.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Net.Http.Extensions.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Xml.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Xml.Linq.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Core.Common.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Common.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Runtime.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.UI.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.Utils.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Fragment.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Media.Compat.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Transition.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.Palette.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Threading.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Collections.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Reflection.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Reflection.Primitives.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Dynamic.Runtime.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.ObjectModel.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Linq.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\netstandard.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Data.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Numerics.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Transactions.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Diagnostics.StackTrace.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Globalization.Extensions.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.IO.Compression.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.IO.Compression.FileSystem.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.Xml.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Security.Cryptography.Algorithms.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Security.SecureString.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Web.Services.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\Mono.Security.dll
-c:\users\admin\documents\visual studio 2017\Projects\StockApp\StockApp\StockApp.Android\obj\Debug\android\assets\System.Net.Primitives.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\StockApp.Android.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\FormsViewGroup.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Java.Interop.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Mono.Android.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\mscorlib.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Plugin.Settings.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\StockApp.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Core.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Net.Http.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Xml.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Xml.Linq.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Core.Common.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Common.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Runtime.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.UI.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.Utils.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Fragment.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Media.Compat.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Transition.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.Palette.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Threading.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Collections.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Reflection.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Reflection.Primitives.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Dynamic.Runtime.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.ObjectModel.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Linq.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\netstandard.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Data.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Numerics.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Transactions.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Diagnostics.StackTrace.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Globalization.Extensions.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.IO.Compression.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.IO.Compression.FileSystem.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.Xml.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Security.Cryptography.Algorithms.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Security.SecureString.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Web.Services.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
+D:\Xamarin-InventoryManagement-WebApi\StockApp\StockApp.Android\obj\Debug\android\assets\Mono.Security.dll

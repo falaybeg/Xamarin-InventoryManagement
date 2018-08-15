@@ -1,12 +1,15 @@
 ﻿using Newtonsoft.Json;
-using StockApp.Models;
-using StockApp.ViewModels;
+using System.Text;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
+using StockApp.ViewModels;
+using StockApp.Models;
+using Newtonsoft.Json.Linq;
+using StockApp.Helpers;
 
 namespace StockApp.Services
 {
@@ -32,10 +35,56 @@ namespace StockApp.Services
             HttpContent content = new StringContent(json);
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-            var response = await client.PostAsync("http://inventorywebapi.azurewebsites.net/api/Account/Register", content);
+            var response = await client.PostAsync(Constants.BaseApiAddress + "api/Account/Register", content);
 
             return response.IsSuccessStatusCode;
         }
+
+
+        public async Task<string> LoginAsync(string userName, string password)
+        {
+            var keyValues = new List<KeyValuePair<string, string>>
+            {
+                new KeyValuePair<string, string>("username", userName),
+                new KeyValuePair<string, string>("password", password),
+                new KeyValuePair<string, string>("grant_type", "password")
+            };
+
+            var request = new HttpRequestMessage(HttpMethod.Post, Constants.BaseApiAddress + "Token");
+            request.Content = new FormUrlEncodedContent(keyValues);
+            var client = new HttpClient();
+            var response = await client.SendAsync(request);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            JObject jwtDynamic = JsonConvert.DeserializeObject<dynamic>(content);
+
+            var accessToken = jwtDynamic.Value<string>("access_token");
+            if (accessToken != null)
+            {
+                Settings.AccessToken = accessToken;
+                Debug.WriteLine(content);
+                return accessToken;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public async Task<List<ProductModel>> GetAllProducts(string accessToken)
+        {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                "Bearer", accessToken);
+
+            var json = await client.GetStringAsync(Constants.BaseApiAddress + "api/Products");
+
+            var products = JsonConvert.DeserializeObject<List<ProductModel>>(json);
+
+            return products;
+        }
+
 
     }
 }

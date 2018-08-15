@@ -26,19 +26,19 @@ public class PageRenderer
 	}
 
 
-	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
-	{
-		super (p0, p1, p2);
-		if (getClass () == PageRenderer.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.PageRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
-	}
-
-
 	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == PageRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.PageRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+	}
+
+
+	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
+	{
+		super (p0, p1, p2);
+		if (getClass () == PageRenderer.class)
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.PageRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
 
 

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockApp.Views.LoginPage"
+             xmlns:viewModel="clr-namespace:StockApp.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModel:LoginViewModel></viewModel:LoginViewModel>
+    </ContentPage.BindingContext>
+    
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="Center"
+                     Spacing="20"
+                     Padding="20">
+            
+        <Entry Text="{Binding UserName}" 
+               Placeholder="Username"/>
+        <Entry Text="{Binding Password}" 
+               Placeholder="Password" 
+               IsPassword="True"/>
+
+        <Button Command="{Binding LoginCommand}" 
+                Text="Login" 
+                BackgroundColor="DodgerBlue"
+                FontSize="20"
+                TextColor="White"
+                Clicked="NavigateButton_Clicked"/>
+
+        <Button Text="Go to Products" Clicked="NavigateButton_Clicked"></Button>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StockApp.Views.ProductPage"
+             xmlns:viewModel="clr-namespace:StockApp.ViewModels">
+
+
+    <ContentPage.BindingContext>
+        <viewModel:ProductViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+
+        <Button Command="{Binding GetProductsCommand}" Text="Get Products"></Button>
+
+        <ListView ItemsSource="{Binding Products}" 
+                  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding Code}" FontSize="14"/>
+                                <Label Text="{Binding Name}" FontSize="14"/>
+                                <Label Text="{Binding CategoryName}" FontSize="14"/>
+
+                            </StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding SellingPrice}" FontSize="14"/>
+
+                            </StackLayout>
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
+    </StackLayout>
+</ContentPage>

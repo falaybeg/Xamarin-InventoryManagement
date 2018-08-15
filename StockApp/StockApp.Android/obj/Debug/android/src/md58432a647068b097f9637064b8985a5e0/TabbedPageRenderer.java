@@ -6,7 +6,8 @@ public class TabbedPageRenderer
 	implements
 		mono.android.IGCUserPeer,
 		android.support.design.widget.TabLayout.OnTabSelectedListener,
-		android.support.v4.view.ViewPager.OnPageChangeListener
+		android.support.v4.view.ViewPager.OnPageChangeListener,
+		android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 {
 /** @hide */
 	public static final String __md_methods;
@@ -21,6 +22,7 @@ public class TabbedPageRenderer
 			"n_onPageScrollStateChanged:(I)V:GetOnPageScrollStateChanged_IHandler:Android.Support.V4.View.ViewPager/IOnPageChangeListenerInvoker, Xamarin.Android.Support.Core.UI\n" +
 			"n_onPageScrolled:(IFI)V:GetOnPageScrolled_IFIHandler:Android.Support.V4.View.ViewPager/IOnPageChangeListenerInvoker, Xamarin.Android.Support.Core.UI\n" +
 			"n_onPageSelected:(I)V:GetOnPageSelected_IHandler:Android.Support.V4.View.ViewPager/IOnPageChangeListenerInvoker, Xamarin.Android.Support.Core.UI\n" +
+			"n_onNavigationItemSelected:(Landroid/view/MenuItem;)Z:GetOnNavigationItemSelected_Landroid_view_MenuItem_Handler:Android.Support.Design.Widget.BottomNavigationView/IOnNavigationItemSelectedListenerInvoker, Xamarin.Android.Support.Design\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.AppCompat.TabbedPageRenderer, Xamarin.Forms.Platform.Android", TabbedPageRenderer.class, __md_methods);
 	}
@@ -34,19 +36,19 @@ public class TabbedPageRenderer
 	}
 
 
-	public TabbedPageRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
-	{
-		super (p0, p1, p2);
-		if (getClass () == TabbedPageRenderer.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.AppCompat.TabbedPageRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
-	}
-
-
 	public TabbedPageRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == TabbedPageRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.AppCompat.TabbedPageRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+	}
+
+
+	public TabbedPageRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
+	{
+		super (p0, p1, p2);
+		if (getClass () == TabbedPageRenderer.class)
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.AppCompat.TabbedPageRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
 
 
@@ -120,6 +122,14 @@ public class TabbedPageRenderer
 	}
 
 	private native void n_onPageSelected (int p0);
+
+
+	public boolean onNavigationItemSelected (android.view.MenuItem p0)
+	{
+		return n_onNavigationItemSelected (p0);
+	}
+
+	private native boolean n_onNavigationItemSelected (android.view.MenuItem p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

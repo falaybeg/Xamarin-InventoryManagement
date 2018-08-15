@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "9fa7168487bc852ecadc6ffacf553cdf69b0b17d"
+    "signature": "60f04414b713eb44133bb939a601cafd9ddea190"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,30 +9,20 @@
     ".NETStandard,Version=v2.0/": {
       "StockApp/1.0.0": {
         "dependencies": {
-          "Microsoft.Net.Http": "2.2.29",
+          "Microsoft.CSharp": "4.5.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
           "System.Net.Http": "4.3.3",
-          "Xamarin.Forms": "3.0.0.561731"
+          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Forms": "3.1.0.697729"
         },
         "runtime": {
           "StockApp.dll": {}
         }
       },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.14": {},
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
+      "Microsoft.CSharp/4.5.0": {
         "runtime": {
-          "lib/net45/System.Net.Http.Extensions.dll": {},
-          "lib/net45/System.Net.Http.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.CSharp.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -461,7 +451,16 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Xamarin.Forms/3.0.0.561731": {
+      "Xam.Plugins.Settings/3.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Settings.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.Settings.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.1.0.697729": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
@@ -476,26 +475,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Bcl/1.1.10": {
+    "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
-      "path": "microsoft.bcl/1.1.10",
-      "hashPath": "microsoft.bcl.1.1.10.nupkg.sha512"
-    },
-    "Microsoft.Bcl.Build/1.0.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
-      "path": "microsoft.bcl.build/1.0.14",
-      "hashPath": "microsoft.bcl.build.1.0.14.nupkg.sha512"
-    },
-    "Microsoft.Net.Http/2.2.29": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
-      "path": "microsoft.net.http/2.2.29",
-      "hashPath": "microsoft.net.http.2.2.29.nupkg.sha512"
+      "sha512": "sha512-EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -854,12 +839,19 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Xamarin.Forms/3.0.0.561731": {
+    "Xam.Plugins.Settings/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZnpuSybty6uZsgInJQD2QoYsjsdzPmu25EltSNJTnwgiQCW0MVZfwU6//jbt4Sf0ZfAiryi8MZFhU1I0NAP6Ew==",
-      "path": "xamarin.forms/3.0.0.561731",
-      "hashPath": "xamarin.forms.3.0.0.561731.nupkg.sha512"
+      "sha512": "sha512-EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
+      "path": "xam.plugins.settings/3.1.1",
+      "hashPath": "xam.plugins.settings.3.1.1.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.1.0.697729": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YlFOM9u8onIRxJwYJ3l+O0wFKqzzrDjDrgnoBr1rct+eaQKU77vFydxvTP+WxYlYzR14hYvyLNC65L84+6ke6w==",
+      "path": "xamarin.forms/3.1.0.697729",
+      "hashPath": "xamarin.forms.3.1.0.697729.nupkg.sha512"
     }
   }
 }
