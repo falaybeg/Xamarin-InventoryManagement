@@ -16,7 +16,8 @@ namespace StockApp.ViewModels
         ApiServices _apiService = new ApiServices();
 
         public string AccessToken { get; set; }
-        public List<ProductModel> _products;
+        private List<ProductModel> _products;
+        public ProductModel Product { get; set; }
 
         public List<ProductModel> Products
         {
@@ -36,6 +37,17 @@ namespace StockApp.ViewModels
                 {
                     var accessToken = Settings.AccessToken;
                     Products = await _apiService.GetAllProducts(accessToken);
+                });
+            }
+        }
+
+        public ICommand MakeOrderCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await _apiService.MakeOrder(Product.Id, Settings.AccessToken);
                 });
             }
         }

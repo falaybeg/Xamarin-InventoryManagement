@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:StockApp.ViewModels"
+             x:Class="StockApp.Views.MyOrdersPage"
+             Title="My Orders Page">
+
+    <!--<ContentPage.BindingContext>
+        <viewModel:OrderViewModel></viewModel:OrderViewModel>
+    </ContentPage.BindingContext>-->
+
+    <!--<StackLayout>
+        <ListView x:Name="OrderListView"
+                  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                            <Label Text="{Binding ProductName}" FontSize="14"/>
+                            <Label Text="{Binding ProductCategory}" FontSize="14"/>
+                         <Label Text="{Binding OrderDate}" FontSize="14"/>
+
+                        <Label Text="{Binding ConfirmStatus}" FontSize="14"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Back to HomePage" Clicked="Button_Clicked"/>
+    </StackLayout>-->
+
+    <ScrollView>
+
+        <ListView x:Name="OrderListView"  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#DDE9FA">
+                                <ContentView Padding="5">
+                                    <Frame OutlineColor="DodgerBlue"  Padding="5">
+                                        <StackLayout Orientation="Horizontal">
+                                            <BoxView Color="DodgerBlue" WidthRequest="3"  HeightRequest="3" />
+                                            <StackLayout>
+                                            <!--<Label Text="{Binding ProductName}" FontSize="22" VerticalOptions="StartAndExpand" />
+                                            <Label Text="{Binding OrderDate}"  FontSize="16"  VerticalOptions="CenterAndExpand" />
+                                            <Label Text="{Binding ConfirmStatus}" FontSize="22" VerticalOptions="End" />-->
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Product Name: " TextColor="Black" FontAttributes="Bold" />
+                                                        <Span Text="{Binding ProductName}"  FontSize="16"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Ordered Date: " TextColor="Black" FontAttributes="Bold" />
+                                                        <Span Text="{Binding OrderDate}"  FontSize="16"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Confirm Status: "  TextColor="Black" FontAttributes="Bold" />
+                                                        <Span Text="{Binding ConfirmStatus}" FontSize="16" TextColor="ForestGreen"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                </ContentView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ScrollView>
+
+</ContentPage>

@@ -23,7 +23,10 @@ namespace StockApp.ViewModels
                 {
                     
                    var accessToken =  await _apiService.LoginAsync(UserName, Password);
-                    Settings.AccessToken = accessToken;
+                    if(accessToken != null)
+                    {
+                        Settings.AccessToken = accessToken;
+                    }
                 });
             }
         }

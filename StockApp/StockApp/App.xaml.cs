@@ -1,4 +1,6 @@
 using StockApp.Helpers;
+using StockApp.Services;
+using StockApp.ViewModels;
 using StockApp.Views;
 using System;
 using Xamarin.Forms;
@@ -32,19 +34,20 @@ namespace StockApp
 			// Handle when your app resumes
 		}
 
-        private void SetMainPage()
+        private async void SetMainPage()
         {
             if(!string.IsNullOrEmpty(Settings.AccessToken))
             {
+                if(DateTime.UtcNow.AddHours(1) > Settings.AccessTokenExpirationDate)
+                {
+                    var loginViewModel = new LoginViewModel();
+                    loginViewModel.LoginCommand.Execute(null);
+                }
                 MainPage = new NavigationPage(new ProductPage());
-            }
-            else if(!string.IsNullOrEmpty(Settings.Username) && !string.IsNullOrEmpty(Settings.Password))
-            {
-                MainPage = new NavigationPage(new LoginPage());
             }
             else
             {
-                MainPage = new NavigationPage(new RegisterPage());
+                MainPage = new NavigationPage(new LoginPage());
             }
         }
 	}

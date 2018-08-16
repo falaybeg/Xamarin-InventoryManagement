@@ -60,9 +60,13 @@ namespace StockApp.Services
             JObject jwtDynamic = JsonConvert.DeserializeObject<dynamic>(content);
 
             var accessToken = jwtDynamic.Value<string>("access_token");
+            var accessTokenExpiration = jwtDynamic.Value<DateTime>(".expires");
+
+
             if (accessToken != null)
             {
                 Settings.AccessToken = accessToken;
+                Settings.AccessTokenExpirationDate = accessTokenExpiration;
                 Debug.WriteLine(content);
                 return accessToken;
             }
@@ -71,6 +75,7 @@ namespace StockApp.Services
                 return null;
             }
         }
+
 
         public async Task<List<ProductModel>> GetAllProducts(string accessToken)
         {
@@ -84,6 +89,42 @@ namespace StockApp.Services
 
             return products;
         }
+
+        public async Task<bool> MakeOrder(int productId, string accessToken)
+        {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                "Bearer", accessToken);
+
+            OrderModel order = new OrderModel
+            {
+                ProductId = productId
+            };
+
+            var json = JsonConvert.SerializeObject(order);
+            HttpContent content = new StringContent(json);
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            var response = await client.PostAsync(Constants.BaseApiAddress + "api/Orders", content);
+
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<List<OrderModel>> GetMyOrders(string accessToken)
+        {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                "Bearer", accessToken);
+
+         
+
+            var json = await client.GetStringAsync(Constants.BaseApiAddress + "api/Orders/GetMyOrders");
+
+            var myOrders = JsonConvert.DeserializeObject<List<OrderModel>>(json);
+
+            return myOrders;
+        }
+
 
 
     }

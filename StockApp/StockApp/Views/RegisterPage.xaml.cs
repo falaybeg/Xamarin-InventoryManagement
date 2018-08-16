@@ -21,5 +21,10 @@ namespace StockApp.Views
         {
             await Navigation.PushAsync(new LoginPage());
         }
+
+        private void RegisterPage_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using StockApp.Helpers;
+using StockApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,20 @@ namespace StockApp.Views
             InitializeComponent();
         }
 
-        private async void NavigateButton_Clicked(object sender, EventArgs e)
+        private async void RegisterPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
+        }
+
+        private async void HomePage_Clicked(object sender, EventArgs e)
         {
             if(Settings.AccessToken != null)
             {
                 await Navigation.PushAsync(new ProductPage());
+            }
+            else
+            {
+                await Navigation.PushAsync(new LoginPage());
             }
         }
     }
