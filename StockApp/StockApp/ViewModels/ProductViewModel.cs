@@ -41,16 +41,6 @@ namespace StockApp.ViewModels
             }
         }
 
-        public ICommand MakeOrderCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await _apiService.MakeOrder(Product.Id, Settings.AccessToken);
-                });
-            }
-        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

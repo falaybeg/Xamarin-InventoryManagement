@@ -5,31 +5,8 @@
              x:Class="StockApp.Views.MyOrdersPage"
              Title="My Orders Page">
 
-    <!--<ContentPage.BindingContext>
-        <viewModel:OrderViewModel></viewModel:OrderViewModel>
-    </ContentPage.BindingContext>-->
-
-    <!--<StackLayout>
-        <ListView x:Name="OrderListView"
-                  HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                            <Label Text="{Binding ProductName}" FontSize="14"/>
-                            <Label Text="{Binding ProductCategory}" FontSize="14"/>
-                         <Label Text="{Binding OrderDate}" FontSize="14"/>
-
-                        <Label Text="{Binding ConfirmStatus}" FontSize="14"/>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-        <Button Text="Back to HomePage" Clicked="Button_Clicked"/>
-    </StackLayout>-->
 
     <ScrollView>
-
         <ListView x:Name="OrderListView"  HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -40,9 +17,6 @@
                                         <StackLayout Orientation="Horizontal">
                                             <BoxView Color="DodgerBlue" WidthRequest="3"  HeightRequest="3" />
                                             <StackLayout>
-                                            <!--<Label Text="{Binding ProductName}" FontSize="22" VerticalOptions="StartAndExpand" />
-                                            <Label Text="{Binding OrderDate}"  FontSize="16"  VerticalOptions="CenterAndExpand" />
-                                            <Label Text="{Binding ConfirmStatus}" FontSize="22" VerticalOptions="End" />-->
                                             <Label>
                                                 <Label.FormattedText>
                                                     <FormattedString>
@@ -62,7 +36,15 @@
                                             <Label>
                                                 <Label.FormattedText>
                                                     <FormattedString>
-                                                        <Span Text="Confirm Status: "  TextColor="Black" FontAttributes="Bold" />
+                                                        <Span Text="Shipping Address: "  TextColor="Black" FontAttributes="Bold" />
+                                                        <Span Text="{Binding ShippingAddress}" FontSize="16"  TextColor="Black"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Confirmation Status: "  TextColor="Black" FontAttributes="Bold" />
                                                         <Span Text="{Binding ConfirmStatus}" FontSize="16" TextColor="ForestGreen"/>
                                                     </FormattedString>
                                                 </Label.FormattedText>

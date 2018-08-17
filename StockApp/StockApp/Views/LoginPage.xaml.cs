@@ -28,10 +28,11 @@ namespace StockApp.Views
         {
             if(Settings.AccessToken != null)
             {
-                await Navigation.PushAsync(new ProductPage());
+                await Navigation.PushAsync(new ProductPage(Settings.AccessToken));
             }
             else
             {
+                await DisplayAlert("Alert", "Internet Connection Error !", "OK");
                 await Navigation.PushAsync(new LoginPage());
             }
         }

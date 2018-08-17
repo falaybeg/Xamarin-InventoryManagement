@@ -14,7 +14,7 @@ namespace StockApp
 		public App ()
 		{
 			InitializeComponent();
-      
+
             SetMainPage();
 			//MainPage = new NavigationPage(new RegisterPage());
 		}
@@ -34,7 +34,7 @@ namespace StockApp
 			// Handle when your app resumes
 		}
 
-        private async void SetMainPage()
+        private void SetMainPage()
         {
             if(!string.IsNullOrEmpty(Settings.AccessToken))
             {
@@ -43,7 +43,7 @@ namespace StockApp
                     var loginViewModel = new LoginViewModel();
                     loginViewModel.LoginCommand.Execute(null);
                 }
-                MainPage = new NavigationPage(new ProductPage());
+                MainPage = new NavigationPage(new ProductPage(Settings.AccessToken));
             }
             else
             {

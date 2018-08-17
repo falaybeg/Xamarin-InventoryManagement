@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright (C) 2017 The Android Open Source Project
   ~
@@ -12,4 +13,9 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  --><alpha android:interpolator="@android:interpolator/decelerate_quad" android:fromAlpha="0.0" android:toAlpha="1.0" android:duration="@integer/config_tooltipAnimTime" xmlns:android="http://schemas.android.com/apk/res/android" />
+  -->
+
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+       android:interpolator="@android:interpolator/decelerate_quad"
+       android:fromAlpha="0.0" android:toAlpha="1.0"
+       android:duration="@integer/config_tooltipAnimTime" />

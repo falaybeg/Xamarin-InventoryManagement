@@ -14,7 +14,8 @@
           "Newtonsoft.Json": "11.0.2",
           "System.Net.Http": "4.3.3",
           "Xam.Plugins.Settings": "3.1.1",
-          "Xamarin.Forms": "3.1.0.697729"
+          "Xamarin.Forms": "3.1.0.697729",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "StockApp.dll": {}
@@ -466,6 +467,11 @@
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {}
+        }
       }
     }
   },
@@ -852,6 +858,11 @@
       "sha512": "sha512-YlFOM9u8onIRxJwYJ3l+O0wFKqzzrDjDrgnoBr1rct+eaQKU77vFydxvTP+WxYlYzR14hYvyLNC65L84+6ke6w==",
       "path": "xamarin.forms/3.1.0.697729",
       "hashPath": "xamarin.forms.3.1.0.697729.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

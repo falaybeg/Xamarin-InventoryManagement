@@ -37,23 +37,9 @@ namespace StockApp.Views
             OrderListView.ItemsSource = this.items;
         }
 
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-
-        //    OrderViewModel.RefreshScrollDown = () => {
-        //        if (ViewModel.Messages.Count > 0)
-        //        {
-        //            Device.BeginInvokeOnMainThread(() => {
-        //                OrderListView.ScrollTo(ViewModel.Messages[ViewModel.Messages.Count - 1], ScrollToPosition.End, true);
-        //            });
-        //        }
-        //    };
-        //}
-
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProductPage());
+            await Navigation.PushAsync(new ProductPage(Settings.AccessToken));
         }
     }
 }

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright (C) 2016 The Android Open Source Project
   ~
@@ -12,4 +13,12 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License
-  --><selector android:exitFadeDuration="@android:integer/config_mediumAnimTime" xmlns:android="http://schemas.android.com/apk/res/android"><item android:state_pressed="true" android:drawable="@drawable/notification_bg_normal_pressed" /><item android:state_pressed="false" android:drawable="@drawable/notification_bg_normal" /></selector>
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <item android:state_pressed="true"
+        android:drawable="@drawable/notification_bg_normal_pressed" />
+    <item android:state_pressed="false" android:drawable="@drawable/notification_bg_normal" />
+</selector>

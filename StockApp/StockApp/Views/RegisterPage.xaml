@@ -14,7 +14,7 @@
                      VerticalOptions="Center"
                      Spacing="20"
                      Padding="20">
-            
+        <StackLayout>
             <Entry Text="{Binding FirstName}" 
                    Placeholder="First Name"/>
             <Entry Text="{Binding LastName}" 
@@ -31,11 +31,23 @@
             <Entry Text="{Binding ConfirmPassword}" 
                    Placeholder="Confirm Password"
                    IsPassword="True"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Command="{Binding RegisterCommand}" 
+                    Image="tickicon.png" 
+                    Text="Register" 
+                    BackgroundColor="#42C300" 
+                    BorderRadius="25"/>
 
-            <Button Command="{Binding RegisterCommand}" Text="Register" BackgroundColor="SeaGreen"/>
+            <Button Text="Go to Login Page" 
+                    Clicked="Button_Clicked"
+                    Image="backicon.png"
+                    BackgroundColor="DodgerBlue"
+                    TextColor="White"
+                    BorderRadius="25"/>
 
-        <Button Text="Go to Login Page" Clicked="RegisterPage_Clicked"/>
-
+        </StackLayout>
+       
     </StackLayout>
 
 </ContentPage>

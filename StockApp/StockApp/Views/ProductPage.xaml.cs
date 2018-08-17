@@ -8,30 +8,30 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace StockApp.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProductPage : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ProductPage : ContentPage
+    {
         private ObservableCollection<ProductModel> items = new ObservableCollection<ProductModel>();
         ApiServices _api = new ApiServices();
 
-        public ProductPage ()
-		{
+        public ProductPage(string accessToken)
+        {
             InitializeComponent();
-            Init();
+            Init(accessToken);
             DisplayAlert("Alert", "For making order click on selected product item !", "OK");
 
         }
 
-        public async void Init()
+        public async void Init(string accessToken)
         {
-            var prod = await _api.GetAllProducts(Settings.AccessToken);
-            foreach(var item in prod)
+            var prod = await _api.GetAllProducts(accessToken);
+
+            foreach (var item in prod)
             {
                 items.Add(item);
             }
@@ -39,24 +39,27 @@ namespace StockApp.Views
         }
 
 
-        private  void MakeOrderClick(object sender, EventArgs e)
-        {
-            var button = sender as Button;
-            var product = button?.BindingContext as ProductModel;
-            var vm = BindingContext as ProductViewModel;
-            vm.MakeOrderCommand.Execute(product);
+        //private void MakeOrderClick(object sender, EventArgs e)
+        //{
+        //    var button = sender as Button;
+        //    var product = button?.BindingContext as ProductModel;
+        //    var vm = BindingContext as ProductViewModel;
+        //  //  vm.MakeOrderCommand.Execute(product);
 
 
-            //var item = (MenuItem)sender;
-            //var model = (ProductModel)item.CommandParameter;
-            //await _api.MakeOrder(model.Id, Settings.AccessToken);
-        }
+        //    //var item = (MenuItem)sender;
+        //    //var model = (ProductModel)item.CommandParameter;
+        //    //await _api.MakeOrder(model.Id, Settings.AccessToken);
+        //}
 
         private async void ProductListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var product = e.Item as ProductModel;
-            await _api.MakeOrder(product.Id, Settings.AccessToken);
-            await Navigation.PushAsync(new MyOrdersPage());
+            var action = await DisplayAlert("", "Do you want to order this product ?", "Yes", "No");
+            if (action)
+            {
+                var product = e.Item as ProductModel;
+                await Navigation.PushAsync(new OrderFinishPage(product));
+            }
         }
 
         private async void MyOrders_Click(object sender, EventArgs e)
@@ -71,5 +74,7 @@ namespace StockApp.Views
             Settings.Password = "";
             await Navigation.PushAsync(new LoginPage());
         }
+
+
     }
 }

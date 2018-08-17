@@ -1,10 +1,12 @@
 ﻿using StockApp.Helpers;
 using StockApp.Services;
+using StockApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace StockApp.ViewModels
 {
@@ -19,13 +21,15 @@ namespace StockApp.ViewModels
         {
             get
             {
-                return new Command(async() =>
+                return new Command(async () =>
                 {
-                    
-                   var accessToken =  await _apiService.LoginAsync(UserName, Password);
-                    if(accessToken != null)
+
+                    var accessToken = await _apiService.LoginAsync(UserName, Password);
+                    if (accessToken != null)
                     {
                         Settings.AccessToken = accessToken;
+                        Application.Current.MainPage = new NavigationPage(new ProductPage(Settings.AccessToken));
+
                     }
                 });
             }

@@ -19,7 +19,15 @@
 
         <!--<Button Command="{Binding GetProductsCommand}" Text="Get Products"></Button>-->
         <!--<Button Text="Make Order" Command="{ Binding  }"/>-->
-       
+
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="NOTE: "  TextColor="Black" FontAttributes="Bold" FontSize="18"/>
+                    <Span Text=" For making order click on a product item !"  TextColor="Black"  FontSize="18"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
 
         <ListView x:Name="ProductListView"
                   HasUnevenRows="True"
@@ -30,7 +38,7 @@
                     
                     <ViewCell>
                         <ViewCell.ContextActions>
-                            <MenuItem Clicked="MakeOrderClick" CommandParameter="{Binding Id}" Text="Make Order" IsDestructive="True"/>
+                            <MenuItem CommandParameter="{Binding Id}" Text="Make Order" IsDestructive="True"/>
                         </ViewCell.ContextActions>
                         
                         <ViewCell.View>
@@ -56,7 +64,7 @@
                                                     <Label.FormattedText>
                                                         <FormattedString>
                                                             <Span Text="Product Name: " TextColor="Black" FontAttributes="Bold" />
-                                                            <Span Text="{Binding Name}"  FontSize="16"/>
+                                                            <Span Text="{Binding Name}"  FontSize="16" TextColor="Black"/>
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>
@@ -64,7 +72,7 @@
                                                     <Label.FormattedText>
                                                         <FormattedString>
                                                             <Span Text="Category Name: "  TextColor="Black" FontAttributes="Bold" />
-                                                            <Span Text="{Binding CategoryName}" FontSize="16" TextColor="ForestGreen"/>
+                                                            <Span Text="{Binding CategoryName}" FontSize="16"/>
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>
@@ -72,8 +80,8 @@
                                                     <Label.FormattedText>
                                                         <FormattedString>
                                                             <Span Text="Price: "  TextColor="Black" FontAttributes="Bold" />
-                                                            <Span Text="{Binding SellingPrice, StringFormat='{0:N}'}" FontSize="16"/>
-                                                            <Span Text="₺"  TextColor="Black" FontAttributes="Bold" />
+                                                            <Span Text="{Binding SellingPrice, StringFormat='{0:N2}'}" FontSize="16"/>
+                                                            <Span Text=" ₺"  TextColor="Black" FontAttributes="Bold" />
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>
@@ -91,7 +99,11 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Text="My Orders Page" Clicked="MyOrders_Click" BackgroundColor="DodgerBlue"/>
+        <Button Text="My Orders Page"
+                Clicked="MyOrders_Click" 
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                Image="ordericon.png"/>
 
     </StackLayout>
 

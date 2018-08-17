@@ -14,5 +14,6 @@ namespace StockApp.Models
         public DateTime OrderDate { get; set; }
         public DateTime ConfirmDate { get; set; }
         public bool ConfirmStatus { get; set; }
+        public string ShippingAddress { get; set; }
     }
 }

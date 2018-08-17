@@ -15,10 +15,12 @@ namespace StockApp.Services
 {
     public class ApiServices
     {
+        HttpClient client = new HttpClient(new Xamarin.Android.Net.AndroidClientHandler());
+
+
 
         public async Task<bool> RegisterAsync(string FirstName, string LastName, string PhoneNumber, string CardNumber, string Email, string Password, string ConfirmPassword)
         {
-            var client = new HttpClient();
 
             RegisterBindingModel user = new RegisterBindingModel
             {
@@ -52,7 +54,6 @@ namespace StockApp.Services
 
             var request = new HttpRequestMessage(HttpMethod.Post, Constants.BaseApiAddress + "Token");
             request.Content = new FormUrlEncodedContent(keyValues);
-            var client = new HttpClient();
             var response = await client.SendAsync(request);
 
             var content = await response.Content.ReadAsStringAsync();
@@ -76,10 +77,8 @@ namespace StockApp.Services
             }
         }
 
-
         public async Task<List<ProductModel>> GetAllProducts(string accessToken)
         {
-            var client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
                 "Bearer", accessToken);
 
@@ -90,16 +89,11 @@ namespace StockApp.Services
             return products;
         }
 
-        public async Task<bool> MakeOrder(int productId, string accessToken)
+        public async Task<bool> MakeOrder(OrderModel order, string accessToken)
         {
-            var client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
                 "Bearer", accessToken);
-
-            OrderModel order = new OrderModel
-            {
-                ProductId = productId
-            };
+            
 
             var json = JsonConvert.SerializeObject(order);
             HttpContent content = new StringContent(json);
@@ -112,11 +106,8 @@ namespace StockApp.Services
 
         public async Task<List<OrderModel>> GetMyOrders(string accessToken)
         {
-            var client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
                 "Bearer", accessToken);
-
-         
 
             var json = await client.GetStringAsync(Constants.BaseApiAddress + "api/Orders/GetMyOrders");
 

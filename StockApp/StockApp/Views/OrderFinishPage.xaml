@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:StockApp.ViewModels"
+             x:Class="StockApp.Views.OrderFinishPage"
+             Title="Your Order Information">
+
+
+    <ContentPage.BindingContext>
+        <viewModels:OrderViewModel></viewModels:OrderViewModel>
+    </ContentPage.BindingContext>
+
+
+    <StackLayout Margin="0,50,0,0">
+
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <BoxView BackgroundColor="White" HeightRequest="1" Color="White" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+                <Label Text="O" TextColor="White" />
+                <BoxView BackgroundColor="White" HeightRequest="1" Color="White" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+
+
+            <ContentView Padding="5">
+                <Frame OutlineColor="DodgerBlue"  Padding="5">
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="DodgerBlue" WidthRequest="3"  HeightRequest="3" />
+                        <StackLayout>
+
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Product Code: " TextColor="Black" FontAttributes="Bold" />
+                                        <Span x:Name="ProductCode" FontSize="16"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Product Name: " TextColor="Black" FontAttributes="Bold" />
+                                        <Span x:Name="ProductName"  FontSize="16"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Category Name: "  TextColor="Black" FontAttributes="Bold" />
+                                        <Span x:Name="ProductCategory" FontSize="16" TextColor="ForestGreen"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Price: "  TextColor="Black" FontAttributes="Bold" />
+                                        <Span x:Name="ProductPrice" FontSize="16"/>
+                                        <Span Text=" ₺"  TextColor="Black" FontAttributes="Bold" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </ContentView>
+        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Shipping Address : " Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" FontSize="16"/>
+            <Entry x:Name="ShippingAddress"  WidthRequest="200"  Grid.Column="1" />
+
+        </Grid>
+        <Button 
+            Text="Finish Order" 
+                FontSize="20"
+                FontAttributes="Bold"
+                BackgroundColor="#42C300" 
+                TextColor="White"
+                BorderRadius="25"
+            Clicked="FinishOrder_Clicked"
+            Image="approvalicon.png"
+            x:Name="ButtonToast"/>
+
+    </StackLayout>
+
+</ContentPage>

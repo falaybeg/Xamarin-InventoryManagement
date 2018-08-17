@@ -1,5 +1,6 @@
 ﻿using StockApp.Helpers;
 using StockApp.Services;
+using StockApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -35,9 +36,9 @@ namespace StockApp.ViewModels
 
 
                     if (result)
-                        Message = "Registered Successfully";
-                    else
-                        Message = "Please try again !";
+                        Application.Current.MainPage = new NavigationPage(new LoginPage());
+
+
                 }); 
             }
 

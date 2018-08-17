@@ -3,5 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>yeni</SelectedDevice>
     <DefaultDevice>yeni</DefaultDevice>
+    <AndroidDesignerPreferredTheme>Theme.DeviceDefault.NoActionBar.Fullscreen</AndroidDesignerPreferredTheme>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

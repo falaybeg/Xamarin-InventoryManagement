@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2014 The Android Open Source Project
 
@@ -12,4 +13,21 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
---><CheckedTextView android:id="@android:id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/listPreferredItemHeightSmall" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="?attr/textColorAlertDialogListItem" android:gravity="center_vertical" android:paddingLeft="@dimen/abc_select_dialog_padding_start_material" android:paddingRight="?attr/dialogPreferredPadding" android:paddingStart="@dimen/abc_select_dialog_padding_start_material" android:paddingEnd="?attr/dialogPreferredPadding" android:drawableLeft="?android:attr/listChoiceIndicatorMultiple" android:drawableStart="?android:attr/listChoiceIndicatorMultiple" android:drawablePadding="20dp" android:ellipsize="marquee" xmlns:android="http://schemas.android.com/apk/res/android" />
+-->
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@android:id/text1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:minHeight="?attr/listPreferredItemHeightSmall"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="?attr/textColorAlertDialogListItem"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="@dimen/abc_select_dialog_padding_start_material"
+                 android:paddingRight="?attr/dialogPreferredPadding"
+                 android:paddingStart="@dimen/abc_select_dialog_padding_start_material"
+                 android:paddingEnd="?attr/dialogPreferredPadding"
+                 android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+                 android:drawableStart="?android:attr/listChoiceIndicatorMultiple"
+                 android:drawablePadding="20dp"
+                 android:ellipsize="marquee" />

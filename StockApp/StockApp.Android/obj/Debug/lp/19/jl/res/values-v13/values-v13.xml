@@ -1,1 +1,4 @@
-<resources><bool name="abc_allow_stacked_button_bar">false</bool></resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+</resources>
