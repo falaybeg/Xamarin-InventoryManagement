@@ -4,5 +4,5 @@ In this repository was written a simple e-commerce cross-platform mobile project
 
 ## Screenshot
 ---
-All screens on A<br/>
+On Android smartphone<br/>
 <img src="/mobileproject.jpeg"  />
